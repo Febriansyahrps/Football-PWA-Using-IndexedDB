@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ligue 1</title>
+        <meta name="description" content="Ligue 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/materialize.min.css">
+        <link rel="manifest" href="/manifest.json">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet preconnect">
+    </head>
+    <body>
+        <!--Nav-->
+        <nav class="indigo darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a class="brand-logo" id="logo-container">Ligue 1</a>
+                <a href="javascript:history.back()" class="sidenav-trigger" data-target="nav-mobile">
+                    <i class="material-icons">arrow_back</i>
+                </a>
+                <a href="javascript:history.back()" class="topnav right hide-on-med-and-down">
+                    <i class="material-icons">arrow_back</i>
+                </a>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+        <!--Nav-->
+
+        <div class="container row" id="body-content"></div>
+
+        <div class="preloader center-align">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large blue" id="save">
+                <i class="large material-icons">save</i>
+            </a>
+        </div>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large blue" id="delete">
+                <i class="large material-icons">delete</i>
+            </a>
+        </div>
+        <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/js/materialize.min.js"></script>
+        <script src="/js/scripts.js"></script>
+        <script src="/js/scripts-saved.js"></script>
+        <script src="/js/sw-register.js"></script>
+        <script src="/js/idb.js"></script>
+        <script src="/js/db.js"></script>
+        <script src="/js/club-info.js"></script>
+        <script src="/js/preloader.js"></script>
+    </body>
+</html>
